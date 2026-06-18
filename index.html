@@ -14,35 +14,44 @@
 
         <header>
             <h1>📺 Program Manager</h1>
-            <p>Manage TV programs</p>
+            <!-- EDITED: Updated the subtitle text to be more descriptive -->
+            <p>Manage your favorite TV programs</p>
         </header>
 
-        <!----------------------------------- Search ----------------------------------->
-
+        <!-- Search Section -->
         <div class="search-box">
+            <!-- EDITED: Added a visually hidden label for accessibility (helps screen readers) -->
+            <label for="searchInput" class="sr-only">Search programs</label>
             <input id="searchInput" type="text" placeholder="Search programs...">
         </div>
 
-        <!------------------------------------ Form ----------------------------------->
-
+        <!-- Program Form Section -->
         <form id="programForm" class="program-form">
 
+            <!-- EDITED: Added <label> tags for all inputs to improve accessibility and UX -->
+            <label for="name">Program Name:</label>
             <input id="name" type="text" placeholder="Program Name" required>
 
+            <label for="description">Description:</label>
             <textarea id="description" placeholder="Program Description" required></textarea>
 
+            <label for="duration">Duration (minutes):</label>
             <input id="duration" type="number" placeholder="Duration (minutes)" required>
 
+            <label for="timeSlot">Time Slot:</label>
             <input id="timeSlot" type="time" required>
 
+            <label for="channel">Channel:</label>
             <select id="channel">
-                <option>SABC1</option>
-                <option>SABC2</option>
-                <option>SABC3</option>
-                <option>eTV</option>
+                <!-- EDITED: Added 'value' attributes to options for cleaner data handling in JS -->
+                <option value="SABC1">SABC1</option>
+                <option value="SABC2">SABC2</option>
+                <option value="SABC3">SABC3</option>
+                <option value="eTV">eTV</option>
             </select>
 
-            <label class="checkbox">
+            <!-- EDITED: Updated class name to 'checkbox-label' for better CSS styling -->
+            <label class="checkbox-label">
                 <input id="isLive" type="checkbox">
                 Live Broadcast
             </label>
@@ -51,9 +60,13 @@
 
         </form>
 
-        <!------------------------------------ Program List ------------------------------------>
-
+        <!-- Program List Section -->
         <div id="programList" class="program-list"></div>
+
+        <!-- EDITED: Added a footer section to properly close out the page layout -->
+        <footer>
+            <p>&copy; 2026 Program Manager. All rights reserved.</p>
+        </footer>
 
     </div>
 
