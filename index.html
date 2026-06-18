@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>📺 Program Manager</h1>
+            <p>Manage TV programs</p>
+        </header>
+
+        <!----------------------------------- Search ----------------------------------->
+
+        <div class="search-box">
+            <input id="searchInput" type="text" placeholder="Search programs...">
+        </div>
+
+        <!------------------------------------ Form ----------------------------------->
+
+        <form id="programForm" class="program-form">
+
+            <input id="name" type="text" placeholder="Program Name" required>
+
+            <textarea id="description" placeholder="Program Description" required></textarea>
+
+            <input id="duration" type="number" placeholder="Duration (minutes)" required>
+
+            <input id="timeSlot" type="time" required>
+
+            <select id="channel">
+                <option>SABC1</option>
+                <option>SABC2</option>
+                <option>SABC3</option>
+                <option>eTV</option>
+            </select>
+
+            <label class="checkbox">
+                <input id="isLive" type="checkbox">
+                Live Broadcast
+            </label>
+
+            <button type="submit">Add Program</button>
+
+        </form>
+
+        <!------------------------------------ Program List ------------------------------------>
+
+        <div id="programList" class="program-list"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

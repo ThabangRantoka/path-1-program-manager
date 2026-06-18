@@ -1,0 +1,183 @@
+/************** Universal Reset (*)-Removes all default spacing from every element***************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fc;
+    color: #333;
+    padding: 30px;
+}
+
+/*********Container-Limits width to 1200px *******/
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #1e3a8a;
+}
+
+header p {
+    color: #666;
+    margin-top: 5px;
+}
+
+/*********** Search **************/
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* Form */
+
+.program-form {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    display: grid;
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.program-form input,
+.program-form textarea,
+.program-form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.program-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Buttons */
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.program-form button {
+    background: #2563eb;
+    color: white;
+}
+
+.program-form button:hover {
+    background: #1d4ed8;
+}
+
+/* Program List */
+
+.program-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.program-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.program-card p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.live {
+    color: green;
+    font-weight: bold;
+}
+
+.recorded {
+    color: red;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.edit-btn {
+    background: orange;
+    color: white;
+    flex: 1;
+}
+
+.edit-btn:hover {
+    background: darkorange;
+}
+
+.delete-btn {
+    background: crimson;
+    color: white;
+    flex: 1;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+.empty-message {
+    text-align: center;
+    color: #777;
+    font-size: 18px;
+    padding: 20px;
+}
