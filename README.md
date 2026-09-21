@@ -23,3 +23,14 @@ This is a web-based application designed to help users manage and organize their
 ## Author
 **Name:** Thabang Rantoka  
 **GitHub:** [ThabangRantoka](https://github.com/ThabangRantoka)
+
+## Project Screenshots
+
+### Add New Program
+![Add New Program](vG5screenshot-665.png)
+
+### Program List
+![Program List](dH3screenshot-666.png)
+
+### More Programs
+![More Programs](RKYscreenshot-667.png)
